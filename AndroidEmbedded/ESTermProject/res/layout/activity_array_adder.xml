@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".ArrayAdderActivity" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="배열 요소 개수"
+            />
+        <Spinner 
+            android:id="@+id/spinner"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <Button 
+            android:id="@+id/createbtn"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="배열 생성"
+            android:onClick="mOnClick"
+            />
+        
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+        android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+        
+        <TextView 
+  		    android:id="@+id/Test"
+  		    android:layout_width="fill_parent"
+  		    android:layout_height="wrap_content"
+  		    android:text=""
+  		    />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView 
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="덧셈 결과:"
+                />
+            <EditText 
+                android:id="@+id/resultedit"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="덧셈 결과는??"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView 
+            android:id="@+id/retext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="결과"
+            />
+            
+        </LinearLayout>
+  		<LinearLayout 
+  		    android:layout_width="fill_parent"
+  		    android:layout_height="wrap_content"
+  		    android:orientation="horizontal"
+  		    >
+  		    <Button
+  		        android:id="@+id/addbtn" 
+  		        android:layout_width="0px"
+  		        android:layout_height="wrap_content"
+  		        android:layout_weight="1"
+  		        android:text="확인"
+  		        />
+  		    
+  		    <Button 
+  		        android:id="@+id/clearbtn"
+  		        android:layout_width="0px"
+  		        android:layout_height="wrap_content"
+  		        android:layout_weight="1"
+  		        android:text="Clear"
+  		        />
+  		    
+  		    
+  		</LinearLayout>
+  		
+  		
+        
+    </LinearLayout>
+
+</LinearLayout>
