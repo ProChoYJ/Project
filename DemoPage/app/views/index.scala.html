@@ -1,0 +1,71 @@
+@(message: String)(first: Html)(content: Html)(footer: Html)(third: Html)(log: State)
+
+
+@main(message)(log) {
+<div id="nav">
+<div id="all">
+
+	<div id="second">
+		<header id="main_header">
+			<div id="back_header">
+				<div id="login" class="inout">
+					<a id="login_a" href="#">login</a> | <a href="#">sign-up</a>
+				</div>
+				<div id="logout" class="inout">
+					<a id="logout_a" href="@routes.Application.logout">logout</a> | <a href="#">background</a>
+				</div>
+			</div><!--
+			--><div id="menu_header" class="nav_header">
+				<ul>
+					<li><a id="home" href="#">Home</a></li>
+					<li><a id="about"href="#">About</a></li>
+					<li><a id="write" href="#">Write</a></li>
+					<li><a id="email" href="#">Email</a></li>
+					<li><a id="file" href="#">File</a></li>
+					
+				</ul>
+			</div>
+		</header>	
+		
+		<article id="main_article">
+		<div class="input">
+			<form id="art_input" method="post" action="@routes.Application.art_save">
+				<p><input type="text" name="art_title" size="50">
+				<button type="submit">save</button>
+				<button id="cancel">cancel</button>
+				</p>
+				<textarea rows="12" cols="90" name="art_content"></textarea>	
+			</form> 
+		</div>
+		<div class="art_cont">
+			@content
+		</div>
+
+		<div id="first">
+			@first
+		</div>
+
+		<div id="third">
+			@third
+		</div>
+		</article>
+
+		<footer id="main_footer">
+			@footer
+		</footer>
+
+		<div id="glayLayer"></div>
+		<div id="overLayer">
+		<form id="log_form" method="post" action="@routes.Application.userLogin">
+			ID &nbsp &nbsp &nbsp<input type="text" name="c_id"></br>	
+			PASS  <input type="password" name="c_password"></br>
+			<button type="submit" >login</button>
+		</form>
+		</div>
+
+	</div>
+	
+</div>
+</div>    
+
+}

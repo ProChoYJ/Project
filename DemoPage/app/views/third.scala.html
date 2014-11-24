@@ -1,0 +1,18 @@
+@(files: Array[Files])
+
+<div id="file_all">
+	<form id="file_form" enctype="multipart/form-data" action="@routes.Application.upload" method="post">
+		<input type="file" name="up_file"><br/>
+		<button type="submit">upload</button>
+	</form>
+
+	<p> file list </p>
+	<ul>
+		@for(a <- files){
+
+			<li><a href="/serve/@a.name">@a.name</a></li>
+		}
+
+	</ul>
+
+</div>

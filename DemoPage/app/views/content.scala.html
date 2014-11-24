@@ -1,0 +1,53 @@
+@(article: List[Article])
+@import models._
+
+@article.map { Article =>
+	<div>
+	<p>@Change.getArt_date(Article.art_date)</p>
+	<dl>
+		<dt>@Article.art_title</dt>
+		<dd>@Article.art_content</dd>
+	</dl>
+	</div>
+}
+
+<div>
+	<p>2014/9/10</p>
+	<dl>
+		<dt>Test</dt>
+		<dd>alsdmlkasmdklmasldmklamsdklmasklmdklalsmdklasklmsad</dd>
+		<dd>lkmdlkasmkldmklasmdklmasklmdklamskldmklmaskldmklamsklmdklmaslkmdkl</dd>
+	</dl>
+
+</div>
+
+
+<div>
+	<p>2014/9/10</p>
+	<dl>
+		<dt>Test</dt>
+		<dd>alsdmlkasmdklmasldmklamsdklmasklmdklalsmdklasklmsad</dd>
+		<dd>lkmdlkasmkldmklasmdklmasklmdklamskldmklmaskldmklamsklmdklmaslkmdkl</dd>
+	</dl>
+
+</div>
+
+<div>
+	<p>2014/9/10</p>
+	<dl>
+		<dt>Test</dt>
+		<dd>alsdmlkasmdklmasldmklamsdklmasklmdklalsmdklasklmsad</dd>
+		<dd>lkmdlkasmkldmklasmdklmasklmdklamskldmklmaskldmklamsklmdklmaslkmdkl</dd>
+	</dl>
+
+</div>
+
+<div>
+	<p>2014/9/10</p>
+	<dl>
+		<dt>Test</dt>
+		<dd>alsdmlkasmdklmasldmklamsdklmasklmdklalsmdklasklmsad</dd>
+		<dd>lkmdlkasmkldmklasmdklmasklmdklamskldmklmaskldmklamsklmdklmaslkmdkl</dd>
+	</dl>
+
+</div>

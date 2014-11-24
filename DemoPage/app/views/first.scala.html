@@ -1,0 +1,49 @@
+@(email:List[Email])
+@import models._
+
+<div id="email_all">
+	<button id="email_write"> write </button></br>
+	<div class="clear"></div>
+	<div id="email_input">
+		<form id="email_form" method="post" action="@routes.Application.email_send">
+			To : <input type="text" size="40" name="recipient"></br>
+			Title : <input type="text" size="55" name="title"></br>
+			<textarea rows="12" cols="70" name="content"></textarea></br>
+			<button type="submit">send</button>
+			<button id="e_cancel">cancel</button>
+		</form>
+	</div>
+	<table id="email_table">
+			<thead>
+				<tr>
+					<th class="tno">no.</th>
+					<th class="ttile">title</th>
+					<th class="twrite">writer</th>
+					<th class="tdate">date</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+					@if(!email.isEmpty){
+					@Counting.numinit(email.size)
+					@for(Email <- email) { 
+							<tr>
+								<td>@Counting.numcount</td>
+								<td class="left">@Email.title</td>
+								<td>@Email.sender</td>
+								<td>@Change.getArt_date(Email.date)</td>
+								<td class="e_content">@Email.content</td>
+							</tr>
+					}
+					
+				
+			}
+				
+			</tbody>
+	</table>
+
+	<div class="eglayLayer"></div>
+	<div class="eoverLayer">
+	<div></div>
+	</div>	
+</div>
