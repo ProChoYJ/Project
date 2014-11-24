@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/select_form"
+    >
+    <HorizontalScrollView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbars="@null"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage1"
+        
+                />
+            
+            <ImageButton 
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage2"
+                />
+            <ImageButton 
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage3"
+                />
+            <ImageButton 
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage4"
+                />
+            <ImageButton 
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage5"
+                />
+            <ImageButton 
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage6"
+                />
+            <ImageButton 
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage7"
+                />
+            <ImageButton 
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage8"
+                />
+            <ImageButton 
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage9"
+                />
+            <ImageButton 
+                android:id="@+id/btn10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@drawable/stage10"
+                />
+           
+                
+            
+        </LinearLayout>
+             
+    </HorizontalScrollView>
+    
+
+</LinearLayout>

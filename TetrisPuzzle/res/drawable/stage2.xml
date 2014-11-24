@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 버튼 클릭시 이미지 -->
+    <item android:state_pressed="true" android:drawable="@drawable/stage_selection_st2_off"/>
+    <!-- 기본이미지 -->
+    <item android:drawable="@drawable/stage_selection_st2_on"/>
+
+ 
+</selector>
+
