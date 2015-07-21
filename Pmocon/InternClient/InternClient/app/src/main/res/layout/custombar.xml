@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:text="P Mocon"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/server_search_btn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFFFFF"
+        android:text="찾기"
+        android:background="@drawable/connect_btn_effect"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

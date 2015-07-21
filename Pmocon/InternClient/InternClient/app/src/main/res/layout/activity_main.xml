@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="30sp"
+              android:background="#f2f1ec"
+              tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+        android:focusableInTouchMode="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="IP: "
+                android:textSize="30sp"
+                android:focusable="false"
+                />
+
+            <EditText
+                android:id="@+id/ip_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890."
+                android:inputType="number|numberDecimal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Port: "
+                android:textSize="30sp"
+                />
+
+            <EditText
+                android:id="@+id/port_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/connect_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Connect"
+
+            android:background="@drawable/connect_btn_effect"
+            />
+    </LinearLayout>
+</LinearLayout>
